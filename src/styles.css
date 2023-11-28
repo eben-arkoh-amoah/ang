@@ -30,7 +30,7 @@ button, a{
         background:  #FFF;
         width: 90%;
         padding: 20px 20px;
-        height: 350px;
+        height: 400px;
         gap: 0px;
         margin: 20px auto;
         gap: 25px;
@@ -60,4 +60,5 @@ letter-spacing: 0.2px;
     gap: 15px;
     width: 100%;
     align-self: center;
+    padding-top: 20px;
 }
