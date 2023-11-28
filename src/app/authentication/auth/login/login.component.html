@@ -1,0 +1,22 @@
+<div class="wrapper">
+    <legend>
+        <h1>Sign in to your account</h1>
+    </legend>
+    
+<form (submit)="onFormSubmit(loginForm)"  #loginForm="ngForm">
+    <fieldset>
+        <label for="loginEmail">
+            Email
+        </label>
+        <input type="email" placeholder="Admin@umat.edu.gh" ngModel name="email" required id="loginEmail">
+    </fieldset>
+    <fieldset>
+        <label for="loginPassword">
+            Password
+        </label>
+        <input type="password"  ngModel name="password" required minlength="8" id="loginPassword">
+    </fieldset>
+    <a > Forgot password?</a>
+    <button type="submit">Login</button>
+</form>
+</div>
