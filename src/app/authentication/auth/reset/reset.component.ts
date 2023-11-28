@@ -4,6 +4,7 @@ import { RouterLink } from '@angular/router';
 import {FormsModule, NgForm} from '@angular/forms';
 
 
+
 @Component({
   selector: 'app-reset',
   standalone: true,
@@ -12,6 +13,7 @@ import {FormsModule, NgForm} from '@angular/forms';
   styleUrl: '../login/login.component.css'
 })
 export class ResetComponent {
+
 
   onFormSubmit(form: NgForm) {
 
