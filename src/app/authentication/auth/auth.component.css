@@ -12,10 +12,11 @@
 main{
     width: 100%;
     max-width: 350px;
+
 }
 
 img{
     height: auto;
     width: 60px;
-    margin: auto;
+    margin-bottom: 20px;
 }
