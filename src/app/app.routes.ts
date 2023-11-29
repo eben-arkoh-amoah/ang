@@ -17,6 +17,6 @@ export const routes: Routes = [
         {path: 'reset-password', component: ResetComponent, title: 'reset password'}
      ]
     },
-    {path: "dashboard", component: DashboardComponent},
+    {path: "dashboard", component: DashboardComponent, title: 'dashboard'},
     {path: "**", component: WildcardComponent, title: '404'}
 ];
