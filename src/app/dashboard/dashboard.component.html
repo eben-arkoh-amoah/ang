@@ -45,19 +45,20 @@
         <input type="search" placeholder="search">
      </div>
      <div class="user">
-        <a [routerLink]="['/routePath']" routerLinkActive="router-link-active" >
+        <a [routerLink]="['/notifications']" routerLinkActive="router-link-active" >
             <img src="../../assets/images/bell.png" alt="" class="usr-icon">
         </a>
-        <a [routerLink]="['/routePath']" routerLinkActive="router-link-active" >
+        <a [routerLink]="['/settings']" routerLinkActive="router-link-active" >
             <img src="../../assets/images/settings.png" alt="" class="usr-icon">
         </a>
-        <a [routerLink]="['/routePath']" routerLinkActive="router-link-active" >
+        <a [routerLink]="['/account']" routerLinkActive="router-link-active" >
             <img src="../../assets/images/user.png" alt="" class="usr">
         </a>
      </div>
     </header>
     <main>
         hello world
+        <router-outlet></router-outlet>
     </main>
    </section>
 </div>
