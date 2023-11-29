@@ -1,0 +1,66 @@
+.container{
+    background-color:  #ECEFF3;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    height: 200px;
+
+}
+
+img{
+    height: auto;
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+.f0f{
+border-right: 1px solid #009688;
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+padding-right: 60px;
+justify-content: center;
+gap: 10px;
+}
+
+.status{
+    font-size:  28px;
+    font-weight: 500;
+    text-align: center;
+    max-width: 105px;
+}
+
+.message{
+    font-size: 17px;
+    font-weight: 300;
+    text-align: right;
+}
+
+.guide{
+    margin: auto;
+}
+
+ol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    margin: auto;
+    padding-left: 60px;
+}
+
+li{
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: "inter";
+    margin-bottom: 8px;
+}
