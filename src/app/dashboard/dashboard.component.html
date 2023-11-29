@@ -45,9 +45,15 @@
         <input type="search" placeholder="search">
      </div>
      <div class="user">
-        <img src="../../assets/images/bell.png" alt="" class="usr-icon">
-        <img src="../../assets/images/settings.png" alt="" class="usr-icon">
-        <img src="../../assets/images/user.png" alt="" class="usr">
+        <a [routerLink]="['/routePath']" routerLinkActive="router-link-active" >
+            <img src="../../assets/images/bell.png" alt="" class="usr-icon">
+        </a>
+        <a [routerLink]="['/routePath']" routerLinkActive="router-link-active" >
+            <img src="../../assets/images/settings.png" alt="" class="usr-icon">
+        </a>
+        <a [routerLink]="['/routePath']" routerLinkActive="router-link-active" >
+            <img src="../../assets/images/user.png" alt="" class="usr">
+        </a>
      </div>
     </header>
     <main>
