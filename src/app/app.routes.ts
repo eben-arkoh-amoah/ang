@@ -4,6 +4,7 @@ import { LoginComponent } from './authentication/auth/login/login.component';
 import { FrgtPasswordComponent } from './authentication/auth/frgt-password/frgt-password.component';
 import { ResetComponent } from './authentication/auth/reset/reset.component';
 import { WildcardComponent } from './wildcard/wildcard.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 export const routes: Routes = [
@@ -16,5 +17,6 @@ export const routes: Routes = [
         {path: 'reset-password', component: ResetComponent, title: 'reset password'}
      ]
     },
+    {path: "dashboard", component: DashboardComponent},
     {path: "**", component: WildcardComponent, title: '404'}
 ];
