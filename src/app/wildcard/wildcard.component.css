@@ -64,3 +64,20 @@ li{
     font-family: "inter";
     margin-bottom: 8px;
 }
+
+.available-routes{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-self: center;
+    align-items: center;
+    width: 100%;
+    max-width: 200px;
+    margin: 0px auto;
+    padding: 20px 0 0 50px;
+}
+
+.available-routes>ul>li{
+list-style: none;
+}
+

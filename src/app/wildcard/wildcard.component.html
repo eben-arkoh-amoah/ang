@@ -13,4 +13,12 @@
         </ol>
        </div>
     </main>
+    <div class="available-routes">
+      <p><b>Available Pages</b></p>
+      <ul *ngFor="let route of routes">
+        <li>
+          <a [routerLink]="[route.path]">{{route.component}}</a>
+        </li>
+      </ul>
+    </div>
 </div>

@@ -55,7 +55,8 @@
                     [datasets]="chartData" 
                     [options]="chartsOptions" 
                     [type]="'doughnut'"
-                    [legend]="BarchartLegend"
+                    [legend]="legend"
+                    [labels]="label"
                     > </canvas>
                 </div>
                 <div class="figures">
@@ -80,7 +81,7 @@
                     <div class="fgr-item">
                         <p class="heading fgr-head">HND APPLICANTS</p>
                         <div class="fgrs">
-                            <div class="fgr-indicator ind2">
+                            <div class="fgr-indicator ind3">
                             </div>
                             <p class="fgr-val">2000</p>
                             <p class="fgr-percent">35%</p>
@@ -89,7 +90,7 @@
                     <div class="fgr-item">
                         <p class="heading fgr-head">TOPUP APPLICANT</p>
                         <div class="fgrs">
-                            <div class="fgr-indicator">
+                            <div class="fgr-indicator ind4">
                             </div>
                             <p class="fgr-val">500</p>
                             <p class="fgr-percent">35%</p>
@@ -99,16 +100,59 @@
             </div>
         </div>
         <div class="degree-appl">
-           <p class="heading fgr-head">DEGREE APPLICATION</p>
-           <!-- <div class="bar">
-            <canvas baseChart 
-            [datasets]="bar1chartData" 
-            [options]="bar1chartsOptions" 
-            [labels]="bar1Chartlabels"
-            [type]="'bar'"
-            [legend]="BarchartLegend"
-            > </canvas>
-        </div> -->
+            <div class="head-cnt">
+               <p class="head prg-head">DEGREE APPLICATION</p>
+           </div>
+           <div class="bar1">
+            <canvas baseChart [datasets]="barChartData" 
+            [options]="barChartOptions" 
+            [type]="'bar'" 
+            [labels]="barChartlabels" 
+            [legend]="legend">
+         </canvas>
+          </div>
+
+        </div>
+    </div>
+    <div class="row2">
+       
+        <div class="degree-appl">
+            <div class="head-cnt">
+               <p class="head prg-head">DEGREE APPLICATION</p>
+           </div>
+           <div class="bar1">
+            <canvas baseChart [datasets]="secondbarChartData" 
+            [options]="secondbarChartOptions" 
+            [type]="'bar'" 
+            [labels]="secondbarChartlabels" 
+            [legend]="secondBarChartLegend">
+         </canvas>
+          </div>
+
+        </div>
+        <div class="degree-appl admitted">
+            <div class="head-cnt">
+                <p class="head prg-head">DEGREE APPLICATION</p>
+                <button class="view-all admission-status">View All</button>
+            </div>
+            <ul class="students">
+                <li class="admited-stnt">
+                    <span><b>#</b></span>
+                    <span><b>Name</b></span>
+                    <span><b>Program</b></span>
+                    <span><b>Status</b></span>
+                </li>
+                <div *ngFor="let student of students" class="admitted-students">
+                    <li class="admited-stnt">
+                     <span><b>{{student.indx}}</b></span>
+                    <span>{{student.name}}</span>
+                    <span>{{student.program}}</span>
+                    <span class="admission-status">{{student.status}}</span>
+                    </li>
+
+                </div>
+            </ul>
+
         </div>
     </div>
 </div>
