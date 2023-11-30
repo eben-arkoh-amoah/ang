@@ -1,0 +1,187 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    gap: 20px;
+}
+
+h2{
+color: #000;
+font-family: "Inter";
+font-size: 32px;
+font-style: normal;
+font-weight: 500;
+line-height: 48px;
+letter-spacing: 0.4px;
+}
+
+.applicant-stats{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 17px;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-self: center;
+    border-radius: 5px;
+    background: white;
+    flex: 1;
+    padding: 10px;
+}
+
+.heading{
+color: #767676;
+font-size: 13px;
+font-weight: 500;
+text-transform: uppercase;
+}
+
+.total{
+    display: flex;
+    justify-content: space-between;
+}
+
+.value, .fgr-val{
+    color: #000;
+font-size: 32px;
+font-weight: 500;
+}
+
+.arrw{
+    height: 20px;
+    width: 20px;
+}
+
+.indicator{
+    background-color: rgb(221, 218, 218);
+    width: 100%;
+    border-radius: 50px;
+    height: 8px;
+}
+
+.msg, .fgr-percent{
+color:  #767676;
+font-size: 13px;
+font-weight: 500;
+}
+
+.percent{
+    color: #009688;
+}
+
+.percentr{
+    color: #CB2431;
+}
+
+.cnt{
+    background-color: green;
+    width: 30%;
+    border-radius: 50px;
+    height: 8px;
+}
+
+.rcnt{
+    background-color: #CB2431;
+}
+
+
+.row1{
+    display: flex;
+    justify-self: center;
+    gap: 15px;
+    padding: 10px;
+}
+
+
+.prgrm-stats{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background: white;
+    border-radius: 4px; 
+    padding: 10px;
+    flex: 2;
+}
+
+.stats{
+    display: flex;
+    justify-content: center;
+}
+
+.head-cnt{
+    border-bottom: 1px solid #E1E4E8;
+    padding: 0px 10px 10px 10px;
+}
+
+.head{
+    font-weight: 500;
+}
+
+.doughnut{
+    display: flex;
+    width: 38%;
+    height: 200px;
+}
+
+.figures{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    border-left: 1px solid #DADADA;
+    padding-left: 40px;
+}
+
+.fgrs{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  width: 60%;
+  padding-top: 5px;
+}
+
+.fgr-item{
+    width: 50%;
+
+}
+
+.fgr-indicator{
+    width: 80px;
+    height: 20px;
+    border-radius: 4px;
+    background-color: #009688;
+}
+
+.ind2{
+    background-color: #A04100;
+}
+.ind3{
+    background-color: #E36209;
+}
+.ind4{
+    background-color: #B08800;
+}
+
+.fgr-val{
+    font-size: 20px;
+    
+}
+
+.fgr-percent{
+    font-size: 16px;
+}
+
+
+
+.degree-appl{
+    display: flex;
+    flex: 1;
+}

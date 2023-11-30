@@ -1,6 +1,5 @@
 .wrapper{
     background: linear-gradient(90deg, #009688 57.82%, rgba(0, 150, 136, 0.60) 123.01%);
-    height: 100vh;
     display: flex;
     padding-top: 20px;
 }
@@ -9,15 +8,19 @@
 .side-bar{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 15px;
     flex: 2;
     align-items: center;
+    background: #262626;
+
 }
 
 .brand{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: #009688;
+    padding-bottom: 40px;
 }
 
 .umLogo{
@@ -38,10 +41,8 @@ text-align: center;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 15px 0 0 0;
+    padding: 0 0 0 0;
     width: 100%;
-    background: #262626;
-    height: 80vh;
 }
 
 .nav-text, a{
@@ -129,9 +130,9 @@ header{
 width: 18px;
 height: 18px;
 flex-shrink: 0;
-position: fixed;
+position: relative;
 top: 33px;
-left: 290px;
+left: 30px;
 }
 
 input[type=search]{
