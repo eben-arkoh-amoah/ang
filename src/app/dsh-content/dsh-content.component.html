@@ -1,0 +1,114 @@
+<div class="wrapper">
+    <h2>Dashboard</h2>
+        <div class="applicant-stats">
+            <div class="item">
+                <p class="heading">Total Applicants</p>
+                <div class="total">
+                    <p class="value">10,000</p>
+                    <img src="../../assets/images/arrow-up.jpg" alt="" class="arrw">
+                </div>
+                <div class="indicator">
+                    <div class="cnt"></div>
+                </div>
+                <p class="msg"> <span class="percent"> 15%</span> than last year</p>
+            </div>
+            <div class="item">
+                <p class="heading">Total accepted applicants</p>
+                <div class="total">
+                    <p class="value">9,000</p>
+                    <img src="../../assets/images/arrow-up.jpg" alt="" class="arrw">
+                </div>
+                <div class="indicator">
+                    <div class="cnt"></div>
+                </div>
+                <p class="msg"> <span class="percent"> 15%</span> than last year</p>
+            </div>
+            <div class="item">
+                <p class="heading">Total Rejected Applicants</p>
+                <div class="total">
+                    <p class="value">1,000</p>
+                    <img src="../../assets/images/arrow-down.jpg" alt="" class="arrw">
+                </div>
+                <div class="indicator">
+                    <div class="cnt rcnt"></div>
+                </div>
+                <p class="msg"> <span class="percentr"> 15%</span> than last year</p>
+            </div>
+            <div class="item">
+                <p class="heading">International Applicants</p>
+                <div class="total">
+                    <p class="value">5,000</p>
+                    <img src="../../assets/images/arrow-up.jpg" alt="" class="arrw">
+                </div>
+                <div class="indicator">
+                    <div class="cnt"></div>
+                </div>
+                <p class="msg"> <span class="percent"> 15%</span> than last year</p>
+            </div>
+    </div>
+    <div class="row1">
+        <div class="prgrm-stats">
+            <div class="head-cnt"><p class="head">PROGRAM TYPE</p></div>
+            <div class="stats">
+                <div class="doughnut">
+                    <canvas baseChart 
+                    [datasets]="chartData" 
+                    [options]="chartsOptions" 
+                    [type]="'doughnut'"
+                    [legend]="BarchartLegend"
+                    > </canvas>
+                </div>
+                <div class="figures">
+                    <div class="fgr-item">
+                        <p class="heading fgr-head">DEGREE APPLICANTS</p>
+                        <div class="fgrs">
+                            <div class="fgr-indicator">
+                            </div>
+                            <p class="fgr-val">5000</p>
+                            <p class="fgr-percent">35%</p>
+                        </div>
+                    </div>
+                    <div class="fgr-item">
+                        <p class="heading fgr-head">Masters Applicants</p>
+                        <div class="fgrs">
+                            <div class="fgr-indicator ind2">
+                            </div>
+                            <p class="fgr-val">3000</p>
+                            <p class="fgr-percent">35%</p>
+                        </div>
+                    </div>
+                    <div class="fgr-item">
+                        <p class="heading fgr-head">HND APPLICANTS</p>
+                        <div class="fgrs">
+                            <div class="fgr-indicator ind2">
+                            </div>
+                            <p class="fgr-val">2000</p>
+                            <p class="fgr-percent">35%</p>
+                        </div>
+                    </div>
+                    <div class="fgr-item">
+                        <p class="heading fgr-head">TOPUP APPLICANT</p>
+                        <div class="fgrs">
+                            <div class="fgr-indicator">
+                            </div>
+                            <p class="fgr-val">500</p>
+                            <p class="fgr-percent">35%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="degree-appl">
+           <p class="heading fgr-head">DEGREE APPLICATION</p>
+           <!-- <div class="bar">
+            <canvas baseChart 
+            [datasets]="bar1chartData" 
+            [options]="bar1chartsOptions" 
+            [labels]="bar1Chartlabels"
+            [type]="'bar'"
+            [legend]="BarchartLegend"
+            > </canvas>
+        </div> -->
+        </div>
+    </div>
+</div>
