@@ -21,7 +21,7 @@ export const routes: Routes = [
 },
 {path: "dashboard", component: DashboardComponent,
 children: [{path: '', component: DshContentComponent, title: "dashboard"}, 
-{path: 'faculties', component: FocultiesComponent, title: "faculties"}
+{path: 'faculties/add', component: FocultiesComponent, title: "faculties"}
   
 ]},
     {path: "**", component: WildcardComponent, title: '404'}

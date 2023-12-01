@@ -6,6 +6,7 @@
     border: none;
    text-decoration: none;
    gap: 0px;
+   font-family: "Inter";
 }
 
 button, a{
@@ -30,7 +31,6 @@ button, a{
         background:  #FFF;
         width: 90%;
         padding: 20px 20px;
-        height: 400px;
         gap: 0px;
         margin: 20px auto;
         gap: 25px;
@@ -61,6 +61,7 @@ letter-spacing: 0.2px;
     width: 100%;
     align-self: center;
     padding-top: 20px;
+    color: #009688;
 }
 
 
@@ -69,3 +70,74 @@ letter-spacing: 0.2px;
     width: 60px;
     margin-bottom: 20px;
 }
+
+.cnt-heading{
+    color: #000;
+    font-family: "Inter";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: 0.4px;
+    }
+
+    .ds-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 10px 20px;
+    }
+
+    .heading{
+        border-bottom: 1px solid #D2D2D2;
+        padding-bottom: 20px;
+    }
+
+    
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+    }
+    
+    input, textarea{
+        border-radius: 4px;
+        border: 1px solid  #9D9D9D;
+        padding: 10px;
+        color:  #262626;
+        font-family: "Inter";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        letter-spacing: -0.15px; 
+        outline: none;
+        text-decoration: none;
+    }
+    
+    input:focus, textarea:focus{
+        border: 1px solid  #009688;
+    }
+    
+    input:invalid.ng-touched, input:invalid.ng-touched{
+    border: 1px solid #D73A49;
+    }
+    
+    button, .cancel{
+        display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background: #009688;
+    font-family: "Inter";
+    font-size: 16px;
+    font-style: normal;
+    color: white;
+    font-weight: 700; 
+    }
+    

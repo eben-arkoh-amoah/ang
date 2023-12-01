@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
+import { FocultiesComponent } from '../foculties/foculties.component';
 
 @Component({
   selector: 'app-wildcard',
@@ -15,6 +16,7 @@ routes = [
   {path: "/auth/forgot-password", component: "Forgot password"},
   {path: "/auth/reset-password", component: "Reset Password"},
   {path: "/dashboard", component: "Dashboard"},
+  {path: "/dashboard/faculties/add", component: "Add Faculties"},
 
 ]
 }
