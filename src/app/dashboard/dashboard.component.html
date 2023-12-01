@@ -9,26 +9,40 @@
         <nav>
             <ul>
                 <li class="nav-text">
-                    <a [routerLink]="['/dashboard']" routerLinkActive="active" >
+                    <a [routerLink]="['/dashboard']" routerLinkActive="active" class="nav-item ">
+                        <img src="../../assets/images/dashboard.png" alt="">
                     Dashboard
                     </a>
                 </li>
                <div class="actions-container">
                 <li>
+                    <button class="nav-text action" (click)="openUniversitySetup()">
+                        <span class="action-name">University Setup</span> <span *ngIf="isUniversitySetOpened; else plus">-</span>
+                        <ng-template #plus>
+                            <span>+</span>
+                        </ng-template>
+                    </button>
+                   <div *ngIf="isUniversitySetOpened">
+                    <div class="sub-actions" *ngFor="let subLink of subLinks">
+                        <span class="nav-text">
+                            <a [routerLink]="[subLink.link]" routerLinkActive="active" class="nav-item ">
+                                <img src={{subLink.img}} alt="">
+                                {{subLink.name}}
+                            </a>
+                        </span> 
+                    </div>
+                   </div>
                     <button class="nav-text action" >
-                        <span class="action-name">University Setup</span> <span>+</span>
+                        <span class="action-name">SHS Setup</span> <span>+</span>
                     </button>
                     <button class="nav-text action" >
-                        <span class="action-name">University Setup</span> <span>+</span>
-                    </button>
-                    <button class="nav-text action" >
-                        <span class="action-name">University Setup</span> <span>+</span>
+                        <span class="action-name">Admissions Setup</span> <span>+</span>
                     </button>
                 </li>
             </div>
             <li class="nav-text">
-                <a [routerLink]="['/analyses']" routerLinkActive="active" >
-                <img src="" alt="" class="icon">
+                <a [routerLink]="['/analyses']" routerLinkActive="active" class="nav-item ">
+                <img src="../../assets/images/analytics.png" alt="" class="icon">
                 Analytics
                 </a>
             </li>

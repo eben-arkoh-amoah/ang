@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterLink, RouterLinkActive, RouterOutlet} from '@angular/router';
 
 
+
 @Component({
   selector: 'app-dashboard',
   standalone: true,
@@ -11,5 +12,17 @@ import { RouterLink, RouterLinkActive, RouterOutlet} from '@angular/router';
   styleUrl: './dashboard.component.css'
 })
 export class DashboardComponent {
+  subLinks = [
+    {link: "/centers", img: "../../assets/images/centers.svg", name: "Centers"},
+    {link: "/faculties", img: "../../assets/images/faculties.png", name: "Faculties"},
+    {link: "/departments", img: "../../assets/images/departments.png", name: "Departments"},
+    {link: "/programs", img: "../../assets/images/programs.png", name: "Programs"},
+    {link: "/students", img: "../../assets/images/students.png", name: "Students"},
+  ]
 
+  isUniversitySetOpened = false;
+
+  openUniversitySetup(){
+   this.isUniversitySetOpened = !this.isUniversitySetOpened;
+  }
 }
