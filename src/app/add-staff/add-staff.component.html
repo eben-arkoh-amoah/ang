@@ -1,2 +1,16 @@
-<p>add-staff works!</p>
-<router-outlet ></router-outlet>
+<section class="ds-wrapper">
+    <div class="heading">
+        <h2 class="cnt-heading">Add Department</h2>
+        <div class="back">
+            <a [routerLink]="['/auth/login']"  class="backLink">
+                <img src="../../../../assets/images/arrow.png" alt="" class="back">
+                Back 
+            </a>
+                <ul class="add-nav">
+                    <li><a [routerLink]="['/dashboard']" routerLinkActive="active">Basic Info</a></li>
+                    <li><a [routerLink]="['account-settings']" routerLinkActive='active'>Account Settings</a></li>
+                </ul>
+            </div>
+        </div>
+   <router-outlet></router-outlet>
+</section>
