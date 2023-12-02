@@ -15,7 +15,7 @@ export class FocultiesComponent {
     {label: "Faculty Name", id: "fname", name: "faculty", minLength: 1, placeholder: "Name of faculty", type: "text"},
     {label: "Dean of Faculty", id: "dean", name: "dean", minLength: 3, placeholder: "Name of Dean", type: "text"},
     {label: "Number of Departments", id: "ndepartments", name: "departments", minLength: 1, placeholder: "Number of departments", type: "text"},
-    {label: "Number ofLectures", id: "nlecturers", name: "lecturers", minLength: 1, placeholder: "Lecturers", type: "text"},
+    {label: "Number of Lectures", id: "nlecturers", name: "lecturers", minLength: 1, placeholder: "Lecturers", type: "text"},
     {label: "Number of Programs", id: "programs", name: "programs", minLength: 3, placeholder: "programs", type: "text"},
     {label: "Email", id: "email", name: "email", minLength: 8, placeholder: "UMaT@email.com", type: "email"},
     {label: "Contact", id: "contact", name: "contact", minLength: 10, placeholder: "contact(s)", type: "text"},
