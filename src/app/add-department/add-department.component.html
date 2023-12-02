@@ -1,0 +1,30 @@
+<section class="ds-wrapper">
+    <div class="heading">
+        <h2 class="cnt-heading">Add Department</h2>
+        <div class="back">
+            <a [routerLink]="['/auth/login']"  class="backLink">
+                <img src="../../../../assets/images/arrow.png" alt="" class="back">
+                Back 
+            </a>
+        </div>
+    </div>
+    <form  #loginForm="ngForm" class="authForm">
+        <legend>FACULTY DEPARTMENTS INFO</legend>
+        <div class="inputs-cnt">
+        <fieldset *ngFor="let input of inputs">
+            <label [htmlFor]="input.id">
+                {{input.label}}
+            </label>
+            <input [type]="input.type" [placeholder]="input.placeholder" ngModel [name]="input.name" required [id]="input.id">
+        </fieldset>
+    </div>
+    <fieldset id="brief-cnt">
+        <label for="brief">Brief</label>
+        <textarea name="breif" id="brief" cols="30" rows="10" minlength="10" placeholder="Description" ngModule></textarea>
+    </fieldset>
+    <div class="btn-cnt">
+    <button type="submit">Submit</button>
+    <button  class="cancel">Cancel</button>
+    </div>
+</form>
+</section>

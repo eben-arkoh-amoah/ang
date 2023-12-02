@@ -141,3 +141,7 @@ fieldset{
     font-weight: 700; 
     }
     
+    label{
+        font-size: 16px;
+        font-weight: 500;
+    }
