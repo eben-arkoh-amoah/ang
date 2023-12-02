@@ -1,0 +1,80 @@
+<section class="ds-wrapper">
+    <div class="heading">
+        <h2 class="cnt-heading">Add Program</h2>
+        <div class="back">
+            <a [routerLink]="['/auth/login']"  class="backLink">
+                <img src="../../../../assets/images/arrow.png" alt="" class="back">
+                Back 
+            </a>
+        </div>
+    </div>
+    <form  #loginForm="ngForm" class="authForm">
+        <legend>PROGRAM BASIC INFO</legend>
+        <div class="inputs-cnt">
+        <fieldset >
+            <label htmFor="course-name">
+               Course Name
+            </label>
+            <input type="text" placeholder="course" ngModel name="course"  minlength="2" required id="course-name">
+        </fieldset>
+        <fieldset >
+            <label htmFor="commence">
+              Starts from
+            </label>
+            <input type="text" placeholder="start from" ngModel name="commence"  minlength="1" required id="commence">
+        </fieldset>
+        <fieldset >
+            <label htmFor="department">
+               Department
+            </label>
+            <select [(ngModel)]="selectedDepartment"  minlength="1" required id="department">
+                <option *ngFor="let department of departments" [value]="department.value">{{department.value}}</option>
+            </select>
+        </fieldset>
+        <fieldset >
+            <label htmFor="c-incharge">
+               Course Incharge
+            </label>
+            <select [(ngModel)]="selectedDepartment">
+                <option *ngFor="let department of departments" [value]="department.value">{{department.value}}</option>
+            </select>
+        </fieldset>
+        <fieldset >
+            <label htmFor="duration">
+               Duration
+            </label>
+            <select  [(ngModel)]="selectedDepartment" id="duration">
+                <option *ngFor="let department of departments" [value]="department.value" id="c-incharge">{{department.value}}</option>
+            </select>
+        </fieldset>
+        <fieldset >
+            <label htmFor="degree-type">
+               Degree Type
+            </label>
+            <select  [(ngModel)]="selectedDepartment" id="degree-type">
+                <option *ngFor="let department of departments" [value]="department.value">{{department.value}}</option>
+            </select>
+        </fieldset>
+        <fieldset class="upload">
+            <fieldset>
+                <label for="profile">
+                    Upload profile
+                </label>
+            <input type="text" placeholder="Choose file" ngModel name="profile"  minlength="2" required id="profile">
+           </fieldset>
+            <label for="file" class="custom-file-label">
+                Browse
+                <input type="file" class="file-input" id="file" style="display: none;">
+              </label>
+        </fieldset>
+    </div>
+    <fieldset id="brief-cnt">
+        <label for="brief">Brief</label>
+        <textarea name="breif" id="brief" cols="30" rows="10" minlength="10" placeholder="Description" ngModule></textarea>
+    </fieldset>
+    <div class="btn-cnt">
+    <button type="submit">Submit</button>
+    <button  class="cancel">Cancel</button>
+    </div>
+</form>
+</section>

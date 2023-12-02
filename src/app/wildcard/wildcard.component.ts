@@ -17,6 +17,8 @@ routes = [
   {path: "/auth/reset-password", component: "Reset Password"},
   {path: "/dashboard", component: "Dashboard"},
   {path: "/dashboard/faculties/add", component: "Add Faculties"},
+  {path: "/dashboard/departments/add", component: "Add Department"},
+  {path: "/dashboard/programs/add", component: "Add Program"},
 
 ]
 }
