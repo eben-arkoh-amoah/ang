@@ -11,6 +11,7 @@ import { AddDepartmentComponent } from './add-department/add-department.componen
 import { AddProgramComponent } from './add-program/add-program.component';
 import { AddStaffComponent } from './add-staff/add-staff.component';
 import { BasicStaffInfoComponent } from './basic-staff-info/basic-staff-info.component';
+import { StaffAcntStngsComponent } from './staff-acnt-stngs/staff-acnt-stngs.component';
 
 
 export const routes: Routes = [
@@ -31,7 +32,8 @@ children: [{path: '', component: DshContentComponent, title: "dashboard"},
 {path: "staff/add", component: AddStaffComponent, title: "Add staff",
 children: [
   {  path: '', redirectTo: 'basic-info', pathMatch: "full"},
-  {path: 'basic-info', component: BasicStaffInfoComponent}
+  {path: 'basic-info', component: BasicStaffInfoComponent},
+  {path: 'account-settings', component: StaffAcntStngsComponent},
 ]
 }
   
