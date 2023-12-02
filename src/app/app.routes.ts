@@ -9,6 +9,8 @@ import { DshContentComponent } from './dsh-content/dsh-content.component';
 import { FocultiesComponent } from './foculties/foculties.component';
 import { AddDepartmentComponent } from './add-department/add-department.component';
 import { AddProgramComponent } from './add-program/add-program.component';
+import { AddStaffComponent } from './add-staff/add-staff.component';
+import { BasicStaffInfoComponent } from './basic-staff-info/basic-staff-info.component';
 
 
 export const routes: Routes = [
@@ -26,6 +28,12 @@ children: [{path: '', component: DshContentComponent, title: "dashboard"},
 {path: 'faculties/add', component: FocultiesComponent, title: "Add faculty"},
 {path: 'departments/add', component: AddDepartmentComponent, title: "Add departments"},
 {path: 'programs/add', component: AddProgramComponent, title: "Add program"},
+{path: "staff/add", component: AddStaffComponent, title: "Add staff",
+children: [
+  {  path: '', redirectTo: 'basic-info', pathMatch: "full"},
+  {path: 'basic-info', component: BasicStaffInfoComponent}
+]
+}
   
 ]},
     {path: "**", component: WildcardComponent, title: '404'}
