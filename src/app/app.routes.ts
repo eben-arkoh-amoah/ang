@@ -12,6 +12,7 @@ import { AddProgramComponent } from './add-program/add-program.component';
 import { AddStaffComponent } from './add-staff/add-staff.component';
 import { BasicStaffInfoComponent } from './basic-staff-info/basic-staff-info.component';
 import { StaffAcntStngsComponent } from './staff-acnt-stngs/staff-acnt-stngs.component';
+import { AddStudentComponent } from './add-student/add-student.component';
 
 
 export const routes: Routes = [
@@ -35,7 +36,12 @@ children: [
   {path: 'basic-info', component: BasicStaffInfoComponent},
   {path: 'account-settings', component: StaffAcntStngsComponent},
 ]
-}
+},
+{path: "students/add", component: AddStudentComponent, title: "Add student",
+children: [
+  {  path: '', redirectTo: 'basic-info', pathMatch: "full"},
+]
+},
   
 ]},
     {path: "**", component: WildcardComponent, title: '404'}

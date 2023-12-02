@@ -18,7 +18,7 @@ export class DashboardComponent {
     {link: "departments/add", img: "../../assets/images/departments.png", name: "Departments"},
     {link: "programs/add", img: "../../assets/images/programs.png", name: "Programs"},
     {link: "staff/add", img: "../../assets/images/students.png", name: "Staff"},
-    {link: "students", img: "../../assets/images/students.png", name: "Students"},
+    {link: "students/add", img: "../../assets/images/students.png", name: "Students"},
   ]
 
   isUniversitySetOpened = true;
