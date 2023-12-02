@@ -1,1 +1,85 @@
-<p>basic-staff-info works!</p>
+<form  #loginForm="ngForm" class="authForm">
+    <legend>STAFF BASIC INFO</legend>
+    <div class="inputs-cnt">
+    <fieldset >
+        <label htmFor="staff-name">
+           Staff Name
+        </label>
+        <input type="text" placeholder="Staff" ngModel name="staff"  minlength="2" required id="staff-name">
+    </fieldset>
+    <fieldset >
+        <label htmFor="courses">
+          Courses
+        </label>
+        <input type="text" placeholder="All Staff Courses" ngModel name="staff-courses"  minlength="1" required id="courses">
+    </fieldset>
+    <fieldset >
+        <label htmFor="department">
+           Department
+        </label>
+        <select [(ngModel)]="selectedDepartment"  minlength="1" required id="department">
+            <option *ngFor="let department of departments" [value]="department.value">{{department.value}}</option>
+        </select>
+    </fieldset>
+    <fieldset >
+        <label htmFor="email">
+           Email
+        </label>
+        <input type="email" placeholder="staff@email.com" name="email" ngModel required minlength="8" id="email">
+    </fieldset>
+    <fieldset >
+        <label htmFor="role">
+           Role
+        </label>
+        <select  [(ngModel)]="selectedDepartment" id="duration">
+            <option *ngFor="let department of departments" [value]="department.value" id="c-incharge">{{department.value}}</option>
+        </select>
+    </fieldset>
+    <fieldset >
+        <label htmFor="phone">
+           Phone Number
+        </label>
+        <input type="tel" placeholder="+233" name="phone" ngModel required minlength="10" id="phone">
+    </fieldset>
+    <fieldset >
+        <label htmFor="location">
+           Location
+        </label>
+        <input type="text" placeholder="Staff`s Location" name="location" ngModel required minlength="3" id="location">
+    </fieldset>
+    <fieldset >
+        <label htmFor="DOB">
+           DOB
+        </label>
+        <input type="text" placeholder="Date of Birth" name="DOB" ngModel required minlength="5" id="DOB">
+    </fieldset>
+    <fieldset >
+        <label htmFor="Gender">
+            Gender
+        </label>
+        <select  [(ngModel)]="selectedDepartment" id="Gender">
+            <option *ngFor="let gender of genders" [value]="gender.value" id="c-incharge">{{gender.value}}</option>
+        </select>
+    </fieldset>
+    <fieldset class="upload">
+        <fieldset>
+            <label for="profile">
+                Upload profile
+            </label>
+        <input type="text" placeholder="Choose file" ngModel name="profile"  minlength="2" required id="profile">
+       </fieldset>
+        <label for="file" class="custom-file-label">
+            Browse
+            <input type="file" class="file-input" id="file" style="display: none;">
+          </label>
+    </fieldset>
+</div>
+<fieldset id="brief-cnt">
+    <label for="brief">Brief</label>
+    <textarea name="breif" id="brief" cols="30" rows="10" minlength="10" placeholder="Description" ngModule></textarea>
+</fieldset>
+<div class="btn-cnt">
+<button type="submit">Submit</button>
+<button  class="cancel">Cancel</button>
+</div>
+</form>

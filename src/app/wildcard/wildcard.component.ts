@@ -19,6 +19,7 @@ routes = [
   {path: "/dashboard/faculties/add", component: "Add Faculties"},
   {path: "/dashboard/departments/add", component: "Add Department"},
   {path: "/dashboard/programs/add", component: "Add Program"},
+  {path: "/dashboard/staff/add/basic-info", component: "Add staff Basic Info"},
 
 ]
 }
