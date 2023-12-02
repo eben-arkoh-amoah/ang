@@ -1,0 +1,73 @@
+<form  #loginForm="ngForm" class="authForm">
+    <legend>STUDENT BASIC INFO</legend>
+    <div class="inputs-cnt">
+    <fieldset >
+        <label htmFor="student-name">
+           Student Name
+        </label>
+        <input type="text" placeholder="student" ngModel name="student"  minlength="2" required id="student-name">
+    </fieldset>
+    <fieldset >
+        <label htmFor="courses">
+          Courses
+        </label>
+        <input type="text" placeholder="All Staff Courses" ngModel name="staff-courses"  minlength="1" required id="courses">
+    </fieldset>
+    <fieldset >
+        <label htmFor="department">
+           Department
+        </label>
+        <select [(ngModel)]="selectedDepartment"  minlength="1" required id="department">
+            <option *ngFor="let department of departments" [value]="department.value">{{department.value}}</option>
+        </select>
+    </fieldset>
+    <fieldset >
+        <label htmFor="commence">
+           Starts From
+        </label>
+        <input type="text" placeholder="Enter Date" name="commence" ngModel required minlength="5" id="commence">
+    </fieldset>
+    <fieldset >
+        <label htmFor="adminssion-type">
+           Admission Type
+        </label>
+        <select  [(ngModel)]="selectedDepartment" id="adminssion-type">
+            <option *ngFor="let department of departments" [value]="department.value">{{department.value}}</option>
+        </select>
+    </fieldset>
+    <fieldset >
+        <label htmFor="level">
+           Level
+        </label>
+        <select  [(ngModel)]="selectedDepartment" id="level">
+            <option *ngFor="let department of departments" [value]="department.value">{{department.value}}</option>
+        </select>
+    </fieldset>
+    <fieldset class="upload">
+        <fieldset>
+            <label for="profile">
+                Upload profile
+            </label>
+        <input type="text" placeholder="Choose file" ngModel name="profile"  minlength="2" required id="profile">
+       </fieldset>
+        <label for="file" class="custom-file-label">
+            Browse
+            <input type="file" class="file-input" id="file" style="display: none;">
+          </label>
+    </fieldset>
+    <fieldset >
+        <label htmFor="degree-type">
+           Degree Type
+        </label>
+        <input type="text" placeholder="Degree Type" name="degree-type" ngModel required minlength="5" id="degree-type">
+    </fieldset>
+</div>
+<fieldset id="brief-cnt">
+    <label for="brief">Brief</label>
+    <textarea name="breif" id="brief" cols="30" rows="10" minlength="10" placeholder="Description" ngModule></textarea>
+</fieldset>
+<div class="btn-cnt">
+<button type="submit">Submit</button>
+<button  class="cancel">Cancel</button>
+</div>
+</form>

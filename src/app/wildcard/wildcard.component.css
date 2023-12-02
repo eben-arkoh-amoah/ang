@@ -72,12 +72,23 @@ li{
     justify-self: center;
     align-items: center;
     width: 100%;
-    max-width: 200px;
+    max-width: 600px;
+   
     margin: 0px auto;
     padding: 20px 0 0 50px;
 }
 
 .available-routes>ul>li{
 list-style: none;
+width: 30%;
+}
+.available-routes>ul>li>a{
+    color: #009688;;
+}
+.available-routes>ul{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 

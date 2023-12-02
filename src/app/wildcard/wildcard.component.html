@@ -15,8 +15,8 @@
     </main>
     <div class="available-routes">
       <p><b>Available Pages</b></p>
-      <ul *ngFor="let route of routes">
-        <li>
+      <ul >
+        <li *ngFor="let route of routes">
           <a [routerLink]="[route.path]">{{route.component}}</a>
         </li>
       </ul>
