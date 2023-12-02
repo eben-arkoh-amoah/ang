@@ -14,6 +14,7 @@ import { BasicStaffInfoComponent } from './basic-staff-info/basic-staff-info.com
 import { StaffAcntStngsComponent } from './staff-acnt-stngs/staff-acnt-stngs.component';
 import { AddStudentComponent } from './add-student/add-student.component';
 import { StudentBasicInfoComponent } from './student-basic-info/student-basic-info.component';
+import { StudentAccountInfoComponent } from './student-account-info/student-account-info.component';
 
 
 export const routes: Routes = [
@@ -40,8 +41,9 @@ children: [
 },
 {path: "students/add", component: AddStudentComponent, title: "Add student",
 children: [
-  {  path: '', redirectTo: 'basic-info', pathMatch: "full"},
+  {  path: '', redirectTo: '/dashboard/students/add/basic-info', pathMatch: "full"},
   {  path: 'basic-info', component: StudentBasicInfoComponent},
+  {  path: 'account-settings', component: StudentAccountInfoComponent},
 ]
 },
   
