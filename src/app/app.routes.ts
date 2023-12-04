@@ -15,6 +15,7 @@ import { StaffAcntStngsComponent } from './staff-acnt-stngs/staff-acnt-stngs.com
 import { AddStudentComponent } from './add-student/add-student.component';
 import { StudentBasicInfoComponent } from './student-basic-info/student-basic-info.component';
 import { StudentAccountInfoComponent } from './student-account-info/student-account-info.component';
+import { ExistingFocultiesComponent } from './existing-foculties/existing-foculties.component';
 
 
 export const routes: Routes = [
@@ -29,6 +30,7 @@ export const routes: Routes = [
 },
 {path: "dashboard", component: DashboardComponent,
 children: [{path: '', component: DshContentComponent, title: "dashboard"}, 
+{path: 'faculties', component: ExistingFocultiesComponent, title: "Faculties"},
 {path: 'faculties/add', component: FocultiesComponent, title: "Add faculty"},
 {path: 'departments/add', component: AddDepartmentComponent, title: "Add departments"},
 {path: 'programs/add', component: AddProgramComponent, title: "Add program"},

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterLink, RouterLinkActive, RouterOutlet} from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterOutlet, Router} from '@angular/router';
 
 
 
@@ -25,5 +25,6 @@ export class DashboardComponent {
 
   openUniversitySetup(){
    this.isUniversitySetOpened = !this.isUniversitySetOpened;
+   console.log(Router)
   }
 }
