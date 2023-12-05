@@ -14,7 +14,7 @@ import { RouterLink, RouterLinkActive, RouterOutlet, Router} from '@angular/rout
 export class DashboardComponent {
   subLinks = [
     {link: "centers", img: "../../assets/images/centers.svg", name: "Centers"},
-    {link: "faculties/add", img: "../../assets/images/faculties.png", name: "Faculties"},
+    {link: "faculties/all", img: "../../assets/images/faculties.png", name: "Faculties"},
     {link: "departments/add", img: "../../assets/images/departments.png", name: "Departments"},
     {link: "programs/add", img: "../../assets/images/programs.png", name: "Programs"},
     {link: "staff/add", img: "../../assets/images/students.png", name: "Staff"},
