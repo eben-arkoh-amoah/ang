@@ -17,7 +17,7 @@ import { StudentBasicInfoComponent } from './student-basic-info/student-basic-in
 import { StudentAccountInfoComponent } from './student-account-info/student-account-info.component';
 import { ExistingFocultiesComponent } from './existing-foculties/existing-foculties.component';
 import { AllFacultiesComponent } from './all-faculties/all-faculties.component';
-
+import { DepartmentsComponent } from './departments/departments.component';
 
 export const routes: Routes = [
     {path: '', redirectTo: '/auth', pathMatch:'full'},
@@ -29,14 +29,17 @@ export const routes: Routes = [
         {path: 'reset-password', component: ResetComponent, title: 'reset password'},
     ]
 },
+
 {path: "dashboard", component: DashboardComponent,
 children: [{path: '', component: DshContentComponent, title: "dashboard",}, 
 {path: 'faculties', component: ExistingFocultiesComponent, title: "Faculties",
 children: [
   {path: '', redirectTo: 'all', pathMatch: 'full'},
-  {path: 'all', component: AllFacultiesComponent}
+  {path: 'all', component: AllFacultiesComponent},
+  {path: 'add', component: FocultiesComponent, title: "Add faculty"},
+  {path: 'departments', component: DepartmentsComponent},
 ]},
-{path: 'faculties/add', component: FocultiesComponent, title: "Add faculty"},
+
 {path: 'departments/add', component: AddDepartmentComponent, title: "Add departments"},
 {path: 'programs/add', component: AddProgramComponent, title: "Add program"},
 {path: "staff/add", component: AddStaffComponent, title: "Add staff",
@@ -46,6 +49,7 @@ children: [
   {path: 'account-settings', component: StaffAcntStngsComponent},
 ]
 },
+
 {path: "students/add", component: AddStudentComponent, title: "Add student",
 children: [
   {  path: '', redirectTo: '/dashboard/students/add/basic-info', pathMatch: "full"},
