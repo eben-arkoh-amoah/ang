@@ -1,0 +1,147 @@
+.ds-wrapper{
+    width: 81vw !important;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background: #ECEFF3;
+   margin-top: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.actions{
+    width: 79%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+
+}
+
+.add-link{
+    padding: 10px 30px;
+    display: flex;
+    gap: 10px;
+    flex-direction: row-reverse;
+}
+
+.add-link>span:nth-child(2){
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.search-container{
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 40px;
+}
+
+.search{
+width: 18px;
+height: 18px;
+flex-shrink: 0;
+position: relative;
+top: 12px;
+left: 30px;
+}
+
+input[type=search]{
+    height: 40px;
+    padding: 8px 50px 8px 40px;
+    align-items: center;
+    flex-shrink: 0; 
+    font-size: 16px;
+    border-radius: 6px;
+   border: 1px solid  #D0D7DE;
+   background: #FFF;
+   box-shadow: 0px 1px 2px 0px rgba(27, 31, 35, 0.08) inset;
+}
+
+table{
+   width: 100%;
+   background: #ECEFF3;
+   margin-top: 20px;
+}
+
+mat-paginator:nth-child(1){
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    background: inherit;
+}
+
+mat-paginator:nth-child(1)::ng-deep .mat-mdc-paginator-page-size-select{
+    display: block ;
+    background-color: white;
+    border: none;
+    width: 70px;
+}
+
+mat-paginator:nth-child(1)::before{
+    content: "Show";
+}
+
+mat-paginator:nth-child(1)::after{
+    content: "entries";
+}
+mat-paginator:nth-child(1)::after, mat-paginator:nth-child(1)::before{
+font-size: 16px;
+font-weight: 700;
+text-align: left;
+color: black;
+
+}
+
+
+mat-paginator:nth-child(1)::ng-deep .mat-mdc-paginator-range-actions, ::ng-deep .mat-mdc-paginator-page-size-label{
+    display: none !important;
+}
+mat-paginator:nth-child(2){
+    width: 100%;
+    background: blue;
+}
+
+.pgt{
+    width: 100% !important;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+tr>td:nth-child(7){
+    cursor: pointer !important;
+}
+
+table, tr, td,th{
+    border: 1px solid #E0E4E9;
+}
+
+tr>td{
+    font-weight: 500;
+    padding: 3px 10px;
+    text-align: center;
+}
+
+tr>td:nth-child(2), tr>td:nth-child(6){
+   text-align: left;
+   max-width: 300px;
+}
+
+th{
+    font-weight: bold;
+}
+
+
+  tr:nth-child(2n+1) {
+    background: #AFB8C133;
+  }
+
+
+
+  .mat-mdc-table .mat-mdc-header-cell {
+    background: #ECEFF3;
+  }
+

@@ -7,7 +7,7 @@ import { RouterLink, RouterOutlet, RouterLinkActive } from '@angular/router';
   standalone: true,
   imports: [CommonModule, RouterLink, RouterOutlet, RouterLinkActive],
   templateUrl: './add-staff.component.html',
-  styleUrl: './add-staff.component.css'
+  styleUrls: ['./add-staff.component.css', '../all-width.css' ]
 })
 export class AddStaffComponent {
   

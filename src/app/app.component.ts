@@ -9,7 +9,7 @@ import { NgChartsModule } from 'ng2-charts';
   standalone: true,
   imports: [CommonModule, RouterOutlet, NgChartsModule],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
+  styleUrls: ['./app.component.css', './all-width.css' ]
   
 })
 export class AppComponent {

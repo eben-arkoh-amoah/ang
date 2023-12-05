@@ -8,7 +8,7 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [CommonModule, FormsModule, RouterLink],
   templateUrl: './add-department.component.html',
-  styleUrl: '../foculties/foculties.component.css'
+  styleUrls: ['../foculties/foculties.component.css', '../all-width.css' ]
 })
 export class AddDepartmentComponent {
 

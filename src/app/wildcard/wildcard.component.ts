@@ -8,7 +8,7 @@ import { FocultiesComponent } from '../foculties/foculties.component';
   standalone: true,
   imports: [CommonModule, RouterLink],
   templateUrl: './wildcard.component.html',
-  styleUrl: './wildcard.component.css'
+  styleUrls: ['./wildcard.component.css', '../all-width.css' ]
 })
 export class WildcardComponent {
 routes = [

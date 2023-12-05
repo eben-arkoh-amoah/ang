@@ -16,6 +16,7 @@ import { AddStudentComponent } from './add-student/add-student.component';
 import { StudentBasicInfoComponent } from './student-basic-info/student-basic-info.component';
 import { StudentAccountInfoComponent } from './student-account-info/student-account-info.component';
 import { ExistingFocultiesComponent } from './existing-foculties/existing-foculties.component';
+import { AllFacultiesComponent } from './all-faculties/all-faculties.component';
 
 
 export const routes: Routes = [
@@ -29,8 +30,12 @@ export const routes: Routes = [
     ]
 },
 {path: "dashboard", component: DashboardComponent,
-children: [{path: '', component: DshContentComponent, title: "dashboard"}, 
-{path: 'faculties', component: ExistingFocultiesComponent, title: "Faculties"},
+children: [{path: '', component: DshContentComponent, title: "dashboard",}, 
+{path: 'faculties', component: ExistingFocultiesComponent, title: "Faculties",
+children: [
+  {path: '', redirectTo: 'all', pathMatch: 'full'},
+  {path: 'all', component: AllFacultiesComponent}
+]},
 {path: 'faculties/add', component: FocultiesComponent, title: "Add faculty"},
 {path: 'departments/add', component: AddDepartmentComponent, title: "Add departments"},
 {path: 'programs/add', component: AddProgramComponent, title: "Add program"},

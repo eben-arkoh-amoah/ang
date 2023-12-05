@@ -2,11 +2,20 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    width: 100%;
     border: none;
    text-decoration: none;
    gap: 0px;
    font-family: "Inter";
+}
+
+::before, ::after{
+    width: 100%;
+
+}
+
+.mat-mdc-select-arrow svg::after{
+content: "10";
+
 }
 
 button, a{
@@ -131,7 +140,7 @@ fieldset{
     border: 1px solid #D73A49;
     }
     
-    button, .cancel{
+    button, .cancel, .add-link{
         display: flex;
     padding: 10px;
     justify-content: center;

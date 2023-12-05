@@ -7,7 +7,7 @@ import { FormsModule } from '@angular/forms';
   standalone: true,
   imports: [CommonModule, FormsModule],
   templateUrl: './basic-staff-info.component.html',
-  styleUrl: './basic-staff-info.component.css'
+  styleUrls: ['./basic-staff-info.component.css', '../all-width.css' ]
 })
 export class BasicStaffInfoComponent {
   departments = [

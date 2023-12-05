@@ -10,7 +10,7 @@ import {FormsModule, NgForm} from '@angular/forms';
   standalone: true,
   imports: [CommonModule, FormsModule, RouterLink],
   templateUrl: './reset.component.html',
-  styleUrl: '../login/login.component.css'
+  styleUrls: ['../login/login.component.css', '../../../all-width.css' ]
 })
 export class ResetComponent {
 

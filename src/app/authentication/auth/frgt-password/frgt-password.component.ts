@@ -8,7 +8,7 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [CommonModule, FormsModule, RouterLink],
   templateUrl: './frgt-password.component.html',
-  styleUrl: '../login/login.component.css'
+  styleUrls: ['../login/login.component.css', '../../../all-width.css' ]
 })
 export class FrgtPasswordComponent {
 

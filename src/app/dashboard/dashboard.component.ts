@@ -9,7 +9,7 @@ import { RouterLink, RouterLinkActive, RouterOutlet, Router} from '@angular/rout
   standalone: true,
   imports: [CommonModule, RouterLink, RouterLinkActive, RouterOutlet],
   templateUrl: './dashboard.component.html',
-  styleUrl: './dashboard.component.css'
+  styleUrls: ['./dashboard.component.css', '../all-width.css' ]
 })
 export class DashboardComponent {
   subLinks = [

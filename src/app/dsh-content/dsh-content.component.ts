@@ -8,7 +8,7 @@ import { NgChartsModule } from 'ng2-charts';
   standalone: true,
   imports: [CommonModule, NgChartsModule],
   templateUrl: './dsh-content.component.html',
-  styleUrl: './dsh-content.component.css'
+  styleUrls: ['./dsh-content.component.css', '../all-width.css' ]
 })
 export class DshContentComponent {
   students = [

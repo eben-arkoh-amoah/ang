@@ -28,6 +28,7 @@
 
 .umLogo{
     margin-bottom: 13px;
+    width: 100px;
 }
 
 .name{
@@ -80,11 +81,6 @@ text-align: center;
     padding: 15px 0px 5px;
     gap: 35px;
 }
-
-/* .plus{
-    padding-right: 10px;
-    background: red;
-} */
 
 .nav-heading{
     border-bottom: 1px solid white;
@@ -206,7 +202,7 @@ height: 25px;
 main{
     border-radius: 16px 16px 0px 0px;
 background: #ECEFF3;
-min-height: 80vh;
+min-height: 99vh;
 }
 
 

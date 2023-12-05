@@ -7,7 +7,7 @@ import { FormsModule } from '@angular/forms';
   standalone: true,
   imports: [CommonModule, RouterLink, FormsModule],
   templateUrl: './foculties.component.html',
-  styleUrl: './foculties.component.css'
+  styleUrls: ['./foculties.component.css', '../all-width.css' ]
 })
 export class FocultiesComponent {
 

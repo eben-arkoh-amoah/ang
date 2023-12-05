@@ -8,7 +8,7 @@ import { FormsModule } from '@angular/forms';
   standalone: true,
   imports: [CommonModule, RouterLink, FormsModule],
   templateUrl: './add-program.component.html',
-  styleUrl: './add-program.component.css'
+  styleUrls: ['./add-program.component.css', '../all-width.css' ]
 })
 export class AddProgramComponent {
 

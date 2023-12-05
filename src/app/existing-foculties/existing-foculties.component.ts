@@ -7,7 +7,7 @@ import { RouterLink, RouterOutlet, RouterLinkActive } from '@angular/router';
   standalone: true,
   imports: [CommonModule, RouterLink, RouterOutlet, RouterLinkActive],
   templateUrl: './existing-foculties.component.html',
-  styleUrl: './existing-foculties.component.css'
+  styleUrls: ['./existing-foculties.component.css', '../all-width.css' ]
 })
 export class ExistingFocultiesComponent {
 
