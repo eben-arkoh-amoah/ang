@@ -17,6 +17,8 @@
         <input type="password"  ngModel name="password" required minlength="8" id="loginPassword">
     </fieldset>
     <a [routerLink]="['/auth/forgot-password']" routerLinkActive="router-link-active" > Forgot password?</a>
-    <button type="submit">Login</button>
+    <button type="submit">
+        <a [routerLink]="'/dashboard'" class="login">Login</a>
+    </button>
 </form>
 </div>

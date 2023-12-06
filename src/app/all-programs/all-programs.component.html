@@ -1,0 +1,60 @@
+<div class="ds-wrapper">
+    <mat-paginator  [pageSizeOptions]="[5,10, 20, 25, 30]"></mat-paginator>
+    <div class="actions">
+      <div class="search-container">
+        <img src="../../assets/images/search.jpg" class="search">
+        <input type="search" placeholder="search">
+     </div>
+     <div>
+      <a [routerLink]="['/dashboard/programs/add']" class="add-link">
+        <span>Add Program</span>
+        <span>+</span>
+      </a>
+     </div>
+    </div>
+    <table mat-table  [dataSource]="dataSource">
+      <ng-container matColumnDef="indx">
+        <th mat-header-cell *matHeaderCellDef>#</th>
+        <td mat-cell *matCellDef="let item"> {{item.indx}} </td>
+      </ng-container>
+  
+      <ng-container matColumnDef="Course_Name">
+        <th mat-header-cell *matHeaderCellDef>Course Name </th>
+        <td mat-cell *matCellDef="let item"> {{item.Course_Name}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="Department">
+        <th mat-header-cell *matHeaderCellDef>Deprtments </th>
+        <td mat-cell *matCellDef="let item"> {{item.Department}} </td>
+      </ng-container>
+  
+      <ng-container matColumnDef="Staff">
+        <th mat-header-cell *matHeaderCellDef> Lecturer </th>
+        <td mat-cell *matCellDef="let item"> {{item.Staff}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="Students">
+        <th mat-header-cell *matHeaderCellDef> Students </th>
+        <td mat-cell *matCellDef="let item"> {{item.Students}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="Duration">
+        <th mat-header-cell *matHeaderCellDef> Duration </th>
+        <td mat-cell *matCellDef="let item"> {{item.Duration}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="Dean_Name">
+        <th mat-header-cell *matHeaderCellDef>Dean Name</th>
+        <td mat-cell *matCellDef="let item"> {{item.Dean_Name}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="Action">
+        <th mat-header-cell *matHeaderCellDef>Action</th>
+        <td mat-cell *matCellDef="let item"> {{item.Action}} </td>
+      </ng-container>
+  
+      <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+      <tr mat-row *matRowDef="let myRowData; columns: columnsToDisplay"></tr>
+    </table>
+  </div>
+  

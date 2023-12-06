@@ -19,6 +19,7 @@ import { ExistingFocultiesComponent } from './existing-foculties/existing-focult
 import { AllFacultiesComponent } from './all-faculties/all-faculties.component';
 import { DepartmentsComponent } from './departments/departments.component';
 import { AllStaffsComponent } from './all-staffs/all-staffs.component';
+import { AllProgramsComponent } from './all-programs/all-programs.component';
 
 export const routes: Routes = [
     {path: '', redirectTo: '/auth', pathMatch:'full'},
@@ -37,10 +38,11 @@ children: [{path: '', component: DshContentComponent, title: "dashboard",},
 children: [
   {path: '', redirectTo: 'all', pathMatch: 'full'},
   {path: 'all', component: AllFacultiesComponent, title: 'All faculties'},
-  {path: 'add', component: FocultiesComponent, title: "All faculty"},
-  {path: 'departments', component: DepartmentsComponent},
-  {path: 'staffs', component: AllStaffsComponent},
+  {path: 'departments', component: DepartmentsComponent, title: 'All departments'},
+  {path: 'staffs', component: AllStaffsComponent, title: 'All Staff'},
+  {path: 'programs', component: AllProgramsComponent, title: 'All programs'},
 ]},
+{path: 'faculties/add', component: FocultiesComponent, title: "Add faculty"},
 
 {path: 'departments/add', component: AddDepartmentComponent, title: "Add departments"},
 {path: 'programs/add', component: AddProgramComponent, title: "Add program"},

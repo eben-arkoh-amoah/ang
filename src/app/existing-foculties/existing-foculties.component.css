@@ -6,11 +6,6 @@
 .heading{
     padding-bottom: 4px;
 }
-.back{
-    display: flex;
-    text-align: left;
-    width: 80px;
-}
 
   .back{
     width: 100%;
@@ -29,7 +24,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 25%;
+    width: 32%;
     padding-top: 20px;
     gap: 20px;
   }
