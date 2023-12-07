@@ -22,7 +22,7 @@ import { AllStaffsComponent } from './all-staffs/all-staffs.component';
 import { AllProgramsComponent } from './all-programs/all-programs.component';
 import { StudentsComponent } from './students/students.component';
 import { AllStudentsComponent } from './all-students/all-students.component';
-
+import { HNDComponent } from './hnd/hnd.component';
 
 export const routes: Routes = [
     {path: '', redirectTo: '/auth', pathMatch:'full'},
@@ -45,8 +45,8 @@ children: [
   {path: 'staffs', component: AllStaffsComponent, title: 'All Staff'},
   {path: 'programs', component: AllProgramsComponent, title: 'All programs'},
 ]},
-{path: 'faculties/add', component: FocultiesComponent, title: "Add faculty"},
 
+{path: 'faculties/add', component: FocultiesComponent, title: "Add faculty"},
 {path: 'departments/add', component: AddDepartmentComponent, title: "Add departments"},
 {path: 'programs/add', component: AddProgramComponent, title: "Add program"},
 {path: "staff/add", component: AddStaffComponent, title: "Add staff",
@@ -54,14 +54,16 @@ children: [
   {  path: '', redirectTo: 'basic-info', pathMatch: "full"},
   {path: 'basic-info', component: BasicStaffInfoComponent},
   {path: 'account-settings', component: StaffAcntStngsComponent},
-]
-},
+]},
+
 {path: 'students', component: StudentsComponent,
 children: [
   {path: '', redirectTo: 'all', pathMatch: 'full'},
   {path: 'all', component: AllStudentsComponent},
+  {path: 'HND', component: HNDComponent},
 ]
 },
+
 {path: "students/add", component: AddStudentComponent, title: "Add student",
 children: [
   {  path: '', redirectTo: '/dashboard/students/add/basic-info', pathMatch: "full"},
