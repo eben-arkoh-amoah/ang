@@ -1,9 +1,8 @@
 import { Component, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
 import {MatTableModule, MatTableDataSource } from '@angular/material/table'; 
 import {MatPaginator, MatPaginatorModule} from '@angular/material/paginator';
-import {RouterLink} from '@angular/router';
+import {RouterLink,  RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-all-programs',
