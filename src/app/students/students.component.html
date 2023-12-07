@@ -1,0 +1,17 @@
+<section class="ds-wrapper">
+    <div class="heading">
+        <h2 class="cnt-heading">Faculties/Students</h2>
+        <div class="back">
+                <ul class="add-nav">
+                    <li><a [routerLink]="['all']" routerLinkActive="active">All Students</a></li>
+                    <li><a [routerLink]="['departments']" routerLinkActive='active'>HND</a></li>
+                    <li><a [routerLink]="['staffs']" routerLinkActive='active'>Bachelors</a></li>
+                    <li><a [routerLink]="['programs']" routerLinkActive='active'>Masters</a></li>
+                    <li><a [routerLink]="['programs']" routerLinkActive='active'>Doctorate</a></li>
+                    <li><a [routerLink]="['programs']" routerLinkActive='active'>Topup</a></li>
+                </ul>
+            </div>
+        </div>
+   <router-outlet>
+   </router-outlet>
+</section>

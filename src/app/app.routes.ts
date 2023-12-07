@@ -20,6 +20,8 @@ import { AllFacultiesComponent } from './all-faculties/all-faculties.component';
 import { DepartmentsComponent } from './departments/departments.component';
 import { AllStaffsComponent } from './all-staffs/all-staffs.component';
 import { AllProgramsComponent } from './all-programs/all-programs.component';
+import { StudentsComponent } from './students/students.component';
+
 
 export const routes: Routes = [
     {path: '', redirectTo: '/auth', pathMatch:'full'},
@@ -53,7 +55,11 @@ children: [
   {path: 'account-settings', component: StaffAcntStngsComponent},
 ]
 },
-
+{path: 'students', component: StudentsComponent,
+children: [
+  {path: '', redirectTo: 'all', pathMatch: 'full'},
+]
+},
 {path: "students/add", component: AddStudentComponent, title: "Add student",
 children: [
   {  path: '', redirectTo: '/dashboard/students/add/basic-info', pathMatch: "full"},

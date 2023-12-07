@@ -1,0 +1,44 @@
+.ds-wrpper{
+    width: 100%;
+}
+
+
+.heading{
+    padding-bottom: 4px;
+}
+
+  .back{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .back>ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 60%;
+    padding-top: 20px;
+    gap: 20px;
+  }
+
+  li{
+    width: auto;
+  }
+
+  .add-nav>li>a{
+font-size: 16px;
+color: black;
+padding-bottom: 4px;
+  }
+
+  .active{
+    border-bottom: 2px solid #009688;
+    width: 100%;
+    color: #009688 !important;
+
+  }
+
