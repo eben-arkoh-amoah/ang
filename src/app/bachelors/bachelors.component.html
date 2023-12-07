@@ -1,0 +1,56 @@
+<div class="ds-wrapper">
+    <mat-paginator  [pageSizeOptions]="[5,10, 20, 25, 30]"></mat-paginator>
+    <div class="actions">
+      <div class="search-container">
+        <img src="../../assets/images/search.jpg" class="search">
+        <input type="search" placeholder="search">
+     </div>
+     <div>
+      <a [routerLink]="['/dashboard/students/add/basic-info']" class="add-link">
+        <span>Add Student</span>
+        <span>+</span>
+      </a>
+     </div>
+    </div>
+    <table mat-table  [dataSource]="dataSource">
+      <ng-container matColumnDef="indx">
+        <th mat-header-cell *matHeaderCellDef>#</th>
+        <td mat-cell *matCellDef="let item"> {{item.indx}} </td>
+      </ng-container>
+  
+      <ng-container matColumnDef="Student_id">
+        <th mat-header-cell *matHeaderCellDef>Student ID</th>
+        <td mat-cell *matCellDef="let item"> {{item.Student_id}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="Student_name">
+        <th mat-header-cell *matHeaderCellDef>Student Name </th>
+        <td mat-cell *matCellDef="let item"> {{item.Student_name}} </td>
+      </ng-container>
+  
+      <ng-container matColumnDef="Course">
+        <th mat-header-cell *matHeaderCellDef class="course"> Course </th>
+        <td mat-cell *matCellDef="let item" class="course"> {{item.Course}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="Level" >
+        <th mat-header-cell *matHeaderCellDef> Level </th>
+        <td mat-cell *matCellDef="let item"> {{item.Level}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="Type">
+        <th mat-header-cell *matHeaderCellDef> Type </th>
+        <td mat-cell *matCellDef="let item" class="type"> {{item.Type}} </td>
+      </ng-container>
+
+
+      <ng-container matColumnDef="Action">
+        <th mat-header-cell *matHeaderCellDef>Action</th>
+        <td mat-cell *matCellDef="let item"> {{item.Action}} </td>
+      </ng-container>
+  
+      <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+      <tr mat-row *matRowDef="let myRowData; columns: columnsToDisplay"></tr>
+    </table>
+  </div>
+  

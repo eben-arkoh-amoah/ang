@@ -23,6 +23,7 @@ import { AllProgramsComponent } from './all-programs/all-programs.component';
 import { StudentsComponent } from './students/students.component';
 import { AllStudentsComponent } from './all-students/all-students.component';
 import { HNDComponent } from './hnd/hnd.component';
+import { BachelorsComponent } from './bachelors/bachelors.component';
 
 export const routes: Routes = [
     {path: '', redirectTo: '/auth', pathMatch:'full'},
@@ -59,8 +60,9 @@ children: [
 {path: 'students', component: StudentsComponent,
 children: [
   {path: '', redirectTo: 'all', pathMatch: 'full'},
-  {path: 'all', component: AllStudentsComponent},
-  {path: 'HND', component: HNDComponent},
+  {path: 'all', component: AllStudentsComponent,  title: 'All students'},
+  {path: 'HND', component: HNDComponent, title: 'HND students'},
+  {path: 'bachelors', component: BachelorsComponent, title: 'Bachelor Students'},
 ]
 },
 
