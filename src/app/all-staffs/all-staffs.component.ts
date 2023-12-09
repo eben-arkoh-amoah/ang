@@ -41,7 +41,7 @@ export class  AllStaffsComponent {
   {indx: 1, Staff_Name: "Prof. Thomas Opare Darkoh", Department: "Department of Mining and Engineering", Email: "thomasino@gmail.com", Courses: "Mining, Electronics",
   Role: "Lecturer", Action: "..."
 },
-  {indx: 1, Staff_Name: "Prof. Thomas Opare Darkoh", Department: "Department of Mining and Engineering", Email: "thomasino@gmail.com", Courses: "Mining, Electronics",
+  {indx: 1, Staff_Name: "Prof. Emmanuel Opare Darkoh", Department: "Department of Building and Engineering", Email: "thomasino@gmail.com", Courses: "Mining, Electronics",
   Role: "Lecturer", Action: "..."
 },
  ]
@@ -58,6 +58,9 @@ indexof: any;
     this.dataSource.paginator = this.paginator;
   }
 
-
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+  }
 
 }

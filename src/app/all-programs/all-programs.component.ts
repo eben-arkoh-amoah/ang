@@ -32,8 +32,11 @@ export class  AllProgramsComponent {
   Duration: "4 years", Action: "..."},
   {indx: 1, Course_Name: "Bachelaor of Sciencein Mining Engineering", Department: "Department of Mining and Engineering", Staff: "Prof. Thomas Darkoh", Students: "50",
   Duration: "4 years", Action: "..."},
-  {indx: 1, Course_Name: "Bachelaor of Sciencein Mining Engineering", Department: "Department of Mining and Engineering", Staff: "Prof. Thomas Darkoh", Students: "50",
+  {indx: 1, Course_Name: "Masters of Science in Mining Engineering", Department: "Department of Mining and Engineering", Staff: "Prof. Thomas Darkoh", Students: "50",
   Duration: "4 years", Action: "..."},
+  {indx: 1, Course_Name: "Masters of Science in Mining Engineering", Department: "Department of Mining and Engineering", Staff: "Prof. Thomas Darkoh", Students: "50",
+  Duration: "4 years", Action: "..."},
+
  ]
 
   columnsToDisplay = ['indx', 'Course_Name', 'Department', "Staff", "Students", "Duration","Action"];
@@ -48,6 +51,9 @@ indexof: any;
     this.dataSource.paginator = this.paginator;
   }
 
-
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+  }
 
 }

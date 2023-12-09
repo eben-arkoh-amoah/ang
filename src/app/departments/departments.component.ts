@@ -44,8 +44,14 @@ export class DepartmentsComponent {
   {indx: 9, Department_Name: "Dpartment of Mining Engineering", Number_Programs: 10, 
   Number_Students: 200, Number_Lecturers: 200 ,HOD_Name:"Prof. John WIlliams Otoo", Action: "..."
 },
-  {indx: 10, Department_Name: "Dpartment of Mining Engineering", Number_Programs: 10, 
-  Number_Students: 200, Number_Studes: 200, Number_Lecturers: 200 ,HOD_Name:"Prof. John WIlliams Otoo", Action: "..."
+  {indx: 10, Department_Name: "Dpartment of Civil Engineering", Number_Programs: 10, 
+  Number_Students: 200, Number_Studes: 200, Number_Lecturers: 200 ,HOD_Name:"Prof. Samuel WIlliams Otoo", Action: "..."
+},
+  {indx: 10, Department_Name: "Dpartment of Civil Engineering", Number_Programs: 10, 
+  Number_Students: 200, Number_Studes: 200, Number_Lecturers: 200 ,HOD_Name:"Prof. Samuel WIlliams Otoo", Action: "..."
+},
+  {indx: 10, Department_Name: "Dpartment of Civil Engineering", Number_Programs: 10, 
+  Number_Students: 200, Number_Studes: 200, Number_Lecturers: 200 ,HOD_Name:"Prof. Samuel WIlliams Otoo", Action: "..."
 },
  
  ]
@@ -60,6 +66,11 @@ indexof: any;
 
   ngOnInit() {
     this.dataSource.paginator = this.paginator;
+  }
+
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
   }
 
 

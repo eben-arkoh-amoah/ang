@@ -36,7 +36,11 @@ export class  AllStudentsComponent {
   Type: "Fee Paying", Action: "..."},
   {indx: 3, Student_id: "UMAT20021", Student_name: "Emmanuel Darkoh", Course: "Bachelor of Science in Mining Engineering", Level: 100,
   Type: "International", Action: "..."},
-  {indx: 1, Student_id: "UMAT20021", Student_name: "Emmanuel Darkoh", Course: "Bachelor of Science in Mining Engineering", Level: 100,
+  {indx: 1, Student_id: "UMAT20021", Student_name: "Samuel Darkoh", Course: "Bachelor of Science in Mining Engineering", Level: 100,
+  Type: "Regular", Action: "..."},
+  {indx: 1, Student_id: "UMAT20021", Student_name: "Samuel Darkoh", Course: "Bachelor of Science in Mining Engineering", Level: 100,
+  Type: "Regular", Action: "..."},
+  {indx: 1, Student_id: "UMAT20021", Student_name: "Samuel Darkoh", Course: "Bachelor of Science in Mining Engineering", Level: 100,
   Type: "Regular", Action: "..."},
  ]
 
@@ -52,6 +56,9 @@ indexof: any;
     this.dataSource.paginator = this.paginator;
   }
 
-
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+  }
 
 }

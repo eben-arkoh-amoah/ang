@@ -53,8 +53,14 @@ export class AllFacultiesComponent {
    Number_Lecturers: 200 ,Dean_Name:"Prof. John WIlliams Otoo", Action: "..."
 },
  
-  {indx: 1, Faculty_Name: "Dpartment of Mining Engineering", Number_Departments: 10, Number_Programs: 10,
-   Number_Lecturers: 200 ,Dean_Name:"Prof. John WIlliams Otoo", Action: "..."
+  {indx: 12, Faculty_Name: "Dpartment of Civil Engineering", Number_Departments: 5, Number_Programs: 12,
+   Number_Lecturers: 30 ,Dean_Name:"Prof. Thomas Otoo", Action: "..."
+},
+  {indx: 12, Faculty_Name: "Dpartment of Civil Engineering", Number_Departments: 5, Number_Programs: 12,
+   Number_Lecturers: 30 ,Dean_Name:"Prof. Thomas Otoo", Action: "..."
+},
+  {indx: 12, Faculty_Name: "Dpartment of Civil Engineering", Number_Departments: 5, Number_Programs: 12,
+   Number_Lecturers: 30 ,Dean_Name:"Prof. Thomas Otoo", Action: "..."
 },
  
  ]
@@ -71,6 +77,9 @@ indexof: any;
     this.dataSource.paginator = this.paginator;
   }
 
-
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+  }
 
 }

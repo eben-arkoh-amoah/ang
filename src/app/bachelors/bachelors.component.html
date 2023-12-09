@@ -3,7 +3,7 @@
     <div class="actions">
       <div class="search-container">
         <img src="../../assets/images/search.jpg" class="search">
-        <input type="search" placeholder="search">
+        <input type="search" placeholder="search" (input)="applyFilter($event)">
      </div>
      <div>
       <a [routerLink]="['/dashboard/students/add/basic-info']" class="add-link">
