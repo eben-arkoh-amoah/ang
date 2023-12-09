@@ -43,7 +43,7 @@ children: [
   {path: '', redirectTo: 'all', pathMatch: 'full'},
   {path: 'all', component: AllFacultiesComponent, title: 'All faculties'},
   {path: 'departments', component: DepartmentsComponent, title: 'All departments'},
-  {path: 'staffs', component: AllStaffsComponent, title: 'All Staff'},
+  {path: 'staff', component: AllStaffsComponent, title: 'All Staff'},
   {path: 'programs', component: AllProgramsComponent, title: 'All programs'},
 ]},
 
