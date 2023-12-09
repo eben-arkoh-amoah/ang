@@ -1,4 +1,4 @@
-<form  #loginForm="ngForm" class="authForm">
+<!-- <form  #loginForm="ngForm" class="authForm">
     <legend>STAFF ACCOUNT SETTINGS</legend>
     <div class="inputs-cnt">
         <div class="username-cnt">
@@ -26,4 +26,34 @@
 <button type="submit">Submit</button>
 <button  class="cancel">Cancel</button>
 </div>
+</form> -->
+
+<form  #loginForm="ngForm" class="authForm">
+    <legend>STAFF ACCOUNT SETTINGS</legend>
+        <div class="inputs-cnt">
+            <div class="username-cnt">
+                <fieldset >
+                    <label htmFor="username">
+                      User Name
+                    </label>
+                    <input type="text" placeholder="Staff" ngModel name="username"  minlength="2" required id="username">
+                </fieldset>
+            </div>
+            <fieldset >
+                <label htmFor="password">
+                   Password
+                </label>
+                <input type="password" placeholder="Staff`s password" ngModel name="password"  minlength="8" required id="password">
+            </fieldset>
+            <fieldset >
+                <label htmFor="confirm">
+                   Confirm Password
+                </label>
+                <input type="password" placeholder="Repeat password" ngModel name="confirm"  minlength="8" required id="confirm">
+            </fieldset>
+         </div>
+         <div class="btn-cnt">
+            <button type="submit">Submit</button>
+            <button  class="cancel">Cancel</button>
+        </div>
 </form>

@@ -3,7 +3,7 @@ legend{
 }
 
 form{
-    width: 100%;
+    width: 80vw;
     display: flex;
     flex-direction: column;
     min-height: 65vh;
@@ -13,8 +13,8 @@ form{
 .inputs-cnt{
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
-    column-gap: 70px;
+    gap: 25px;
+    column-gap: 8%;
 }
 
 fieldset{
@@ -24,10 +24,12 @@ width: 46%;
 .username-cnt>fieldset{
     width: 100%;
 }
+
 .btn-cnt{
     display: flex;
     gap: 20px;
 }
+
 
 .btn-cnt>button{
     width: 100px;
