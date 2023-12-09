@@ -7,6 +7,10 @@
     padding-bottom: 4px;
 }
 
+.default{
+  color: #737373;
+}
+
   .back{
     width: 100%;
     display: flex;

@@ -1,12 +1,14 @@
 <section class="ds-wrapper">
     <div class="heading">
-        <h2 class="cnt-heading">Faculties/</h2>
+        <h2 class="cnt-heading">
+            <span class="default">{{default}}</span><span>{{title}}</span>
+        </h2>
         <div class="back">
                 <ul class="add-nav">
-                    <li><a [routerLink]="['all']" routerLinkActive="active">All Faculties</a></li>
-                    <li><a [routerLink]="['departments']" routerLinkActive='active'>Departments</a></li>
-                    <li><a [routerLink]="['staff']" routerLinkActive='active'>Staffs</a></li>
-                    <li><a [routerLink]="['programs']" routerLinkActive='active'>Programs</a></li>
+                    <li><a [routerLink]="['all']" routerLinkActive="active" (click)="changeHeading(all)" #all name="Faculty">All Faculties</a></li>
+                    <li><a [routerLink]="['departments']" routerLinkActive='active' (click)="changeHeading(department)" #department name="/Department">Departments</a></li>
+                    <li><a [routerLink]="['staff']" routerLinkActive='active' (click)="changeHeading(staff)" #staff name="/Staff">Staffs</a></li>
+                    <li><a [routerLink]="['programs']" routerLinkActive='active'  (click)="changeHeading(program)" #program name="/Program">Programs</a></li>
                 </ul>
             </div>
         </div>

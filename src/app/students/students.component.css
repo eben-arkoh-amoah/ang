@@ -15,6 +15,10 @@
     gap: 20px;
   }
 
+  .default{
+    color: #737373;
+  }
+
   .back>ul{
     list-style: none;
     display: flex;

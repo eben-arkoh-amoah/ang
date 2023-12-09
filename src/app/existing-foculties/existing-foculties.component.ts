@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterLink, RouterOutlet, RouterLinkActive } from '@angular/router';
 import { AllFacultiesComponent } from '../all-faculties/all-faculties.component';
 
+
 @Component({
   selector: 'app-existing-foculties',
   standalone: true,
@@ -13,4 +14,12 @@ import { AllFacultiesComponent } from '../all-faculties/all-faculties.component'
 export class ExistingFocultiesComponent {
 
   heading = 'Add Faculty'
+  title: string = 'Faculty';
+  default: string = '' 
+
+  changeHeading(event: any){
+    console.log(event.name)
+    this.title = event.name;
+    this.title === 'Faculty' ? this.default = '' : this.default = 'Faculty';
+  }
 }
